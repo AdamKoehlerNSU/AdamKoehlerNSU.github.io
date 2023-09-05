@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AK Assignment 5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+    <body>
+        <h1>Image Maps</h1>
+        <br>
+        <p>Click one of the areas below to visit the NSU, OSU, or OU website.</p>
+        <br>
+        <p>
+            <!--
+            <a href = "abc">
+                <img src = "https://billrosener.com/teaching/is3053/assignments/assignment5/oklahoma.gif" ismap>
+            </a>
+        -->
+        
+        <img src = "https://billrosener.com/teaching/is3053/assignments/assignment5/oklahoma.gif" usemap = "#OKLAHOMA">
+        <map name = "OKLAHOMA">
+                <area shape = "rect" coords = "300,45,375,100" href = "https://www.nsuok.edu/" alt = "NSU">
+                <area shape = "circle" coords = "245,55,25" href = "https://www.okstate.edu/" alt = "OSU">
+                <area shape = "poly" coords = "200,90,250,90,250,125,225,150,200,125" href = "https://www.ou.edu/" alt = "OU">
+        </map>
+        </p>
+        <br>
+        <br>
+        <h3><a href='index.html'> Back to Homepage</a></h3>
+    </body>
+</html>
