@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AK Assignment 22</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+    <body>
+        <script language="javascript">
+            function extract() {
+                var completeName = document.form1.name.value;
+                
+                var spacePos = completeName.indexOf(" ");
+                var first = completeName.substring(0,spacePos);
+                var last = completeName.substring(spacePos+1,completeName.length);
+
+                
+                document.form1.output.value = "First Name:" + first + "\nContains " + first.length + " characters.\n" + "Last Name: " + last + "\nContains " + last.length + " characters.\n";
+            }
+        </script>
+        <h1>Assignment 22</h1>
+        <br>
+        <h2>String Manipulation</h2>
+        <br>
+        <form name="form1">
+            First & Last Name: <input type="text" name="name" size="30" />
+            <p></p>
+            <input type="button" value="Extract  Name" onClick="extract()" />
+            <p></p>
+            <textarea name="output" rows="8" cols="50"></textarea>
+        </form>
+    </body>
+</html>

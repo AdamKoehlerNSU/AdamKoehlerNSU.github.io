@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>AK Assignment 21</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+    <body>
+        <script language="javascript">
+            function calculate() {
+                var  total = (document.form1.housing.value *1) + (document.form1.tuition.value*1) + (document.form1.books.value*1);
+                document.form1.total.value = "$" + total;
+            }
+        </script>
+        <h1>Assignment 21</h1>
+        <br>
+        <h2>College Expense Calculator</h2>
+        <br>
+        <form name="form1">
+            Housing: <input type="text" name="housing" size="10" />
+            <p></p>
+            Tuition: <input type="text" name="tuition" size="10" />
+            <p></p>
+            Books: <input type="text" name="books" size="10" />
+            <p></p>
+
+            Total: <input type="text" name="total" size="10" />
+            <p></p>
+            <input type="button" value="Calculate Total" onClick="calculate()" />
+        </form>
+    </body>
+</html>
